@@ -31,7 +31,7 @@ export class Graph {
           : this.orthogonalCoord(this.rorateCoord(this.dots[iter[i]]));
 
       ctx.beginPath();
-      ctx.arc(transCoord[iter[i]][0], transCoord[iter[i]][1], 4, 0, Math.PI * 2);
+      ctx.arc(transCoord[iter[i]][0], transCoord[iter[i]][1], 3, 0, Math.PI * 2);
       ctx.fillStyle = 'rgb(0, 0, 0)';
       ctx.fill();
     }
@@ -40,7 +40,7 @@ export class Graph {
       ctx.beginPath();
       ctx.moveTo(transCoord[this.lines[i][0]][0], transCoord[this.lines[i][0]][1]);
       ctx.lineTo(transCoord[this.lines[i][1]][0], transCoord[this.lines[i][1]][1]);
-      ctx.lineWidth = 4;
+      ctx.lineWidth = 2;
       ctx.strokeStyle = '#000000';
       ctx.stroke();
     }
@@ -54,7 +54,7 @@ export class Graph {
       ctx.lineTo(transCoord[this.faces[i][0]][0], transCoord[this.faces[i][0]][1]);
       ctx.fillStyle = 'rgba(125, 190, 255, 0.3)';
       ctx.fill();
-      ctx.lineWidth = 1;
+      ctx.lineWidth = 2;
       ctx.lineCap = 'round';
       ctx.lineJoin = 'round';
       ctx.strokeStyle = '#000000';
