@@ -52,7 +52,7 @@ export class Graph {
         ctx.lineTo(transCoord[this.faces[i][j]][0], transCoord[this.faces[i][j]][1]);
       }
       ctx.lineTo(transCoord[this.faces[i][0]][0], transCoord[this.faces[i][0]][1]);
-      ctx.fillStyle = 'rgba(125, 190, 255, 0.3)';
+      ctx.fillStyle = 'rgba(125, 190, 255, 0.15)';
       ctx.fill();
       ctx.lineWidth = 2;
       ctx.lineCap = 'round';
