@@ -112,7 +112,6 @@ export class Graph {
   }
 
   perspectiveCoord(coord) {
-    console.log(this.lc);
     const x = coord[0] / (1 - coord[3] / this.lc);
     const y = coord[1] / (1 - coord[3] / this.lc);
     const z = coord[2] / (1 - coord[3] / this.lc);

@@ -286,12 +286,12 @@ export class Controller {
     let sign = 0;
     if (this.onLeft) sign = 1;
     else if (this.onRight) sign = -1;
-    if (this.axis[0] && this.axis[1]) this.rorate[0] += 0.005 * sign;
-    if (this.axis[0] && this.axis[2]) this.rorate[1] += 0.005 * sign;
-    if (this.axis[0] && this.axis[3]) this.rorate[2] += 0.005 * sign;
-    if (this.axis[1] && this.axis[2]) this.rorate[3] += 0.005 * sign;
-    if (this.axis[1] && this.axis[3]) this.rorate[4] += 0.005 * sign;
-    if (this.axis[2] && this.axis[3]) this.rorate[5] += 0.005 * sign;
+    if (this.axis[0] && this.axis[1]) this.rorate[0] += 0.01 * sign;
+    if (this.axis[0] && this.axis[2]) this.rorate[1] += 0.01 * sign;
+    if (this.axis[0] && this.axis[3]) this.rorate[2] += 0.01 * sign;
+    if (this.axis[1] && this.axis[2]) this.rorate[3] += 0.01 * sign;
+    if (this.axis[1] && this.axis[3]) this.rorate[4] += 0.01 * sign;
+    if (this.axis[2] && this.axis[3]) this.rorate[5] += 0.01 * sign;
 
     requestAnimationFrame(this.rorateAngle.bind(this));
   }
